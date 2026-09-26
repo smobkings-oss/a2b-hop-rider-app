@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#0a0a0a" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="description" content="A2B Hop rider app — instant hops and scheduled rides across Northwest Ohio and Michigan." />
   <title>A2B Hop — Rider</title>
   <link rel="manifest" href="./manifest.json" />
   <link rel="icon" href="./icon.svg" type="image/svg+xml" />
@@ -14,27 +15,14 @@
 </head>
 <body>
   <div class="app" id="app">
-    <section class="screen on" id="screen-splash">
-      <div class="splash">
-        <div>
-          <div class="holo">A2B</div>
-          <p class="eyebrow" style="margin-top:18px">Northwest Ohio · Michigan</p>
-          <h1>Hop on.</h1>
-          <p class="muted">Instant rides and scheduled pickups. Premium cars. Transparent fares.</p>
-          <div style="margin-top:22px">
-            <button class="btn btn-gold" data-go="home">Ride now</button>
-            <button class="btn btn-ghost" data-go="schedule">Schedule a ride</button>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section class="screen on" id="screen-splash"></section>
     <section class="screen" id="screen-home"></section>
     <section class="screen" id="screen-confirm"></section>
     <section class="screen" id="screen-live"></section>
     <section class="screen" id="screen-rides"></section>
     <section class="screen" id="screen-account"></section>
     <nav class="nav" id="nav">
-      <button data-go="home" class="on">Hop</button>
+      <button data-go="home">Hop</button>
       <button data-go="schedule">Schedule</button>
       <button data-go="rides">Rides</button>
       <button data-go="account">Account</button>

@@ -1,4 +1,4 @@
-const CACHE = 'a2b-hop-rider-v1';
+const CACHE = 'a2b-hop-rider-v2';
 const ASSETS = ['./', './index.html', './styles.css', './app.js', './manifest.json', './icon.svg'];
 
 self.addEventListener('install', event => {
