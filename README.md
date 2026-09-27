@@ -9,11 +9,14 @@ Black / gold A2B branding. Works as a phone home-screen app (PWA) with no build 
 - Hop now or schedule a pickup
 - Choose pickup / dropoff from local places (Toledo, Perrysburg, Findlay, Fremont, TOL / DTW / CLE)
 - Use current location
+- Save frequent places on-device
 - Pick Comfort, Tesla Navigator, or XL
 - See a live fare estimate (same rate math as a2bridesohio.com)
 - Confirm card or cash
 - Track an instant ride through matching → en route → arrived → in trip
-- Review trip history
+- Share a trip for safety
+- Rate completed hops
+- Review and cancel scheduled rides
 - Save a rider profile on-device
 
 ## Run it
@@ -33,7 +36,7 @@ Live dispatch, passenger accounts, Stripe, and driver matching already live in t
 - Site: https://a2bridesohio.com/hop
 - Code: https://github.com/smobkings-oss/a2bridesohio-com
 
-This Hop rider shell is the mobile-first experience. Set `API_BASE` in `app.js` to `https://a2bridesohio.com` when you want `placeRide()` to `POST /api/ride-requests` instead of localStorage-only.
+This Hop rider shell is the mobile-first experience. Set `API_BASE` in `app.js` to `https://a2bridesohio.com` when you want `placeRide()` to `POST /api/ride-requests` instead of localStorage-only. Production booking still requires a signed-in passenger account because of same-origin + auth checks.
 
 ## Brand
 
