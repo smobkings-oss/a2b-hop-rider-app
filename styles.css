@@ -29,11 +29,19 @@ a { color: var(--gold); }
 .eyebrow { color: var(--gold); letter-spacing: .16em; text-transform: uppercase; font-size: 11px; margin: 0 0 4px; }
 .muted { color: var(--muted); }
 .hero-map {
-  position: relative; overflow: hidden; height: 168px; border-radius: 22px;
+  position: relative; overflow: hidden; height: 176px; border-radius: 22px;
   background:
-    radial-gradient(circle at 20% 20%, rgba(230,195,92,.18), transparent 32%),
+    radial-gradient(circle at 18% 18%, rgba(230,195,92,.2), transparent 34%),
+    radial-gradient(circle at 80% 70%, rgba(143,211,255,.08), transparent 28%),
     linear-gradient(160deg, #1a1a1a, #0c0c0c);
   border: 1px solid var(--line); margin-bottom: 14px;
+}
+.hero-map .grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+  background-size: 28px 28px;
 }
 .hero-map .road { position: absolute; inset: 42% 8% auto; height: 8px; background: #2f2f2f; border-radius: 8px; }
 .hero-map .pin, .hero-map .car { position: absolute; width: 14px; height: 14px; border-radius: 50%; }
@@ -46,7 +54,7 @@ a { color: var(--gold); }
 label { display: block; font-size: 13px; color: var(--muted); margin: 8px 0; }
 .input {
   width: 100%; margin-top: 6px; background: #0b0b0b; border: 1px solid #333;
-  border-radius: 14px; padding: 12px 12px; outline: none;
+  border-radius: 14px; padding: 12px; outline: none;
 }
 .input:focus { border-color: var(--gold-2); }
 .row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
@@ -99,6 +107,7 @@ label { display: block; font-size: 13px; color: var(--muted); margin: 8px 0; }
 .splash { min-height: 72vh; display: grid; place-items: center; text-align: center; padding: 24px 8px; }
 .splash h1 { font-size: 42px; margin: 10px 0 6px; }
 .holo {
+  font-size: 54px; font-weight: 800; letter-spacing: .08em;
   background: linear-gradient(120deg, #fff6c8, #e6c35c, #8fd3ff, #f4d06f);
   -webkit-background-clip: text; background-clip: text; color: transparent;
 }
@@ -106,6 +115,9 @@ label { display: block; font-size: 13px; color: var(--muted); margin: 8px 0; }
 .filter { display: flex; gap: 8px; margin-bottom: 12px; }
 .safety { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .safety a, .safety button { text-decoration: none; text-align: center; }
+.kpi { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 12px; }
+.kpi div { background: #101010; border: 1px solid var(--line); border-radius: 16px; padding: 10px; text-align: center; }
+.kpi strong { display: block; font-size: 18px; }
 @media (min-width: 720px) {
   body { padding: 24px 0 40px; }
   .nav { max-width: 480px; margin: 0 auto; left: 50%; right: auto; transform: translateX(-50%); border-radius: 18px 18px 0 0; }
