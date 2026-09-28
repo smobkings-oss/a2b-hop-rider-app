@@ -16,7 +16,7 @@ Black / gold A2B branding. Works as a phone home-screen app (PWA) with no build 
 - Track an instant ride through matching → en route → arrived → in trip
 - Share a trip for safety
 - Rate completed hops
-- Review and cancel scheduled rides
+- Review, cancel, and repeat rides
 - Save a rider profile on-device
 
 ## Run it
