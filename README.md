@@ -7,17 +7,19 @@ Black / gold A2B branding. Works as a phone home-screen app (PWA) with no build 
 ## What riders can do
 
 - Hop now or schedule a pickup
-- Choose pickup / dropoff from local places (Toledo, Perrysburg, Findlay, Fremont, TOL / DTW / CLE)
+- Choose pickup / dropoff from local places (Toledo, Perrysburg, Findlay, Fremont, Sylvania, TOL / DTW / CLE)
 - Use current location
+- Search places as you type
 - Save frequent places on-device
 - Pick Comfort, Tesla Navigator, or XL
 - See a live fare estimate (same rate math as a2bridesohio.com)
 - Confirm card or cash
-- Track an instant ride through matching → en route → arrived → in trip
+- Track an instant ride on a live map through matching → en route → arrived → in trip
 - Share a trip for safety
 - Rate completed hops
-- Review, cancel, and repeat rides
+- Repeat, cancel, and filter rides
 - Save a rider profile on-device
+- Add to home screen
 
 ## Run it
 
