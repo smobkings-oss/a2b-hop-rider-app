@@ -8,7 +8,7 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-title" content="A2B Hop" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="description" content="A2B Hop — instant hops and scheduled rides across Northwest Ohio and Michigan." />
+  <meta name="description" content="A2B Hop — hop on for an instant ride or schedule a pickup across Northwest Ohio and Michigan." />
   <title>A2B Hop — Rider</title>
   <link rel="manifest" href="./manifest.json" />
   <link rel="icon" href="./icon.svg" type="image/svg+xml" />
@@ -17,20 +17,7 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <div class="app" id="app">
-    <section class="screen on" id="screen-splash"></section>
-    <section class="screen" id="screen-home"></section>
-    <section class="screen" id="screen-confirm"></section>
-    <section class="screen" id="screen-live"></section>
-    <section class="screen" id="screen-rides"></section>
-    <section class="screen" id="screen-account"></section>
-    <nav class="nav" id="nav">
-      <button type="button" data-go="home">Hop</button>
-      <button type="button" data-go="schedule">Schedule</button>
-      <button type="button" data-go="rides">Rides</button>
-      <button type="button" data-go="account">Account</button>
-    </nav>
-  </div>
+  <div class="app" id="app"></div>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
   <script src="./app.js"></script>
 </body>

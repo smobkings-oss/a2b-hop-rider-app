@@ -1,45 +1,31 @@
 # A2B Hop — Rider App
 
-Installable rider app for **instant hops** and **scheduled rides** across Northwest Ohio and Michigan.
+Installable rider app for **instant hops** and **scheduled rides** across Northwest Ohio and southeast Michigan.
 
-Black / gold A2B branding. Works as a phone home-screen app (PWA) with no build step.
+Black / gold A2B branding. No build step. Add it to a phone home screen.
 
 ## What riders can do
 
-- Hop now or schedule a pickup
-- Choose pickup / dropoff from local places (Toledo, Perrysburg, Findlay, Fremont, Sylvania, TOL / DTW / CLE)
-- Use current location
-- Search places as you type
-- Save frequent places on-device
-- Pick Comfort, Tesla Navigator, or XL
-- See a live fare estimate (same rate math as a2bridesohio.com)
-- Confirm card or cash
-- Track an instant ride on a live map through matching → en route → arrived → in trip
-- Share a trip for safety
-- Rate completed hops
-- Repeat, cancel, and filter rides
-- Save a rider profile on-device
-- Add to home screen
+- Hop now, or schedule a pickup date and time
+- Search local places or type any address
+- Use current location and save frequent places
+- Choose Comfort, Tesla Navigator, or XL
+- See a transparent fare estimate before confirming
+- Pay with card (on the live site) or cash with the driver
+- Track an instant ride: matching → assigned → en route → arrived → in trip → completed
+- Share the trip, cancel, rate, and rebook
+- Keep upcoming scheduled rides and past hops on the device
 
 ## Run it
-
-Open `index.html` in a browser, or serve the folder:
 
 ```bash
 npx --yes serve .
 ```
 
-On a phone: open the hosted URL → Share / Add to Home Screen.
+Phone: open the hosted URL, then Share → Add to Home Screen.
 
-## Production backend
+## Live dispatch
 
-Live dispatch, passenger accounts, Stripe, and driver matching already live in the canonical repo:
-
-- Site: https://a2bridesohio.com/hop
-- Code: https://github.com/smobkings-oss/a2bridesohio-com
-
-This Hop rider shell is the mobile-first experience. Set `API_BASE` in `app.js` to `https://a2bridesohio.com` when you want `placeRide()` to `POST /api/ride-requests` instead of localStorage-only. Production booking still requires a signed-in passenger account because of same-origin + auth checks.
-
-## Brand
+Production booking, passenger accounts, Stripe, and driver matching live at [a2bridesohio.com](https://a2bridesohio.com). This app is the mobile rider shell. Orders are saved on the device and can be handed to live dispatch from the confirm screen. Card checkout stays on the signed-in site so payment secrets never live in the phone app.
 
 Anytime Anywhere Solutions LLC DBA A2B Rides · a2bridesohio.com
