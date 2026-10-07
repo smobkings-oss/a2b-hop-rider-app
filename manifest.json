@@ -1,14 +1,13 @@
 {
-  "name": "A2B Hop — Rider",
+  "name": "A2B Hop",
   "short_name": "A2B Hop",
-  "description": "Instant hops and scheduled rides across Northwest Ohio and Michigan.",
+  "description": "Hop on for an instant ride or schedule a pickup across Northwest Ohio.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "orientation": "portrait",
   "background_color": "#070707",
   "theme_color": "#070707",
   "icons": [
-    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
   ]
 }
